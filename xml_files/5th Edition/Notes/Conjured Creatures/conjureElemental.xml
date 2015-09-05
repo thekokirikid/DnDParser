@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes version="5">
+	<title>Conjure Elemental</title>
+	<text>The following creatures are valid targets for the spell Conjure Elemental:</text>
+	<text>5th-Level Slot:</text>
+	<text>	• Air Elemental</text>
+	<text>	• Azer</text>
+	<text>	• Dust Mephit</text>
+	<text>	• Earth Elemental</text>
+	<text>	• Fire Elemental</text>
+	<text>	• Fire Snake</text>
+	<text>	• Gargoyle</text>
+	<text>	• Ice Mephit</text>
+	<text>	• Magma Mephit</text>
+	<text>	• Magmin</text>
+	<text>	• Mud Mephit</text>
+	<text>	• Salamander</text>
+	<text>	• Smoke Mephit</text>
+	<text>	• Steam Mephit</text>
+	<text>	• Water Elemental</text>
+	<text>	• Water Weird</text>
+	<text>	• Xorn</text>
+	<text />
+	<text>6th-Level Slot:</text>
+	<text>	• Galeb Duhr</text>
+	<text>	• Invisible Stalker</text>
+	<text />
+	<text>7th-Level Slot:</text>
+	<text>	• Air Elemental Myrmidon</text>
+	<text>	• Earth Elemental Myrmidon</text>
+	<text>	• Fire Elemental Myrmidon</text>
+	<text>	• Water Elemental Myrmidon</text>
+	<text />
+	<!--<text>8th-Level Slot:</text>
+	<text />
+	<text>9th-Level Slot:</text>
+	<text />-->
+</notes>
+	
