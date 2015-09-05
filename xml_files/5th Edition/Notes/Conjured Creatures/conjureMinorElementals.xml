@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes version="5">
+	<title>Conjure Minor Elementals</title>
+	<text>The following Fey are valid targets for the spell Conjure Minor Elementals:</text>
+	<text>CR 1/4 or lower:</text>
+	<text>	• Mud Mephit</text>
+	<text>	• Smoke Mephit</text>
+	<text>	• Steam Mephit</text>
+	<text />
+	<text>CR 1/2:</text>
+	<text>	• Dust Mephit</text>
+	<text>	• Ice Mephit</text>
+	<text>	• Magma Mephit</text>
+	<text>	• Magmin</text>
+	<text />
+	<text>CR 1:</text>
+	<text>	• Fire Snake</text>
+	<text />
+	<text>CR 2:</text>
+	<text>	• Azer</text>
+	<text>	• Gargoyle</text>
+	<text />
+</notes>
+	
