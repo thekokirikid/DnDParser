@@ -10,4 +10,9 @@ After cloning the repository and installing NodeJS, run:
 This will start up the redis server. To test loading the dictionary into redis, run the command:
 
   node dictionaryServer.js
+
+After starting the redis server you must create a directory called 'xml_files' and place all the Application XML files in this directory.
+
+  mkdir xml_files
+  
   
