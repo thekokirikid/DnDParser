@@ -16,6 +16,7 @@ After starting the redis server you must create a directory called 'xml_files' a
   mkdir xml_files
 
 To run the parser run:
+
   node parser.js
   
 If there is an error with the syntax of an xml file an error will be displayed depicting the file and the error in that file.
