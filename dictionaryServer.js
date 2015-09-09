@@ -4,7 +4,7 @@ module.exports = {
 		console.log("initializing...");
 		this.redis = require("redis");
 		this.redisClient = this.redis.createClient();
-		this.data = require('./libraries/dictionary.json');
+		this.data = require('./library/dictionary.json');
 
 		this.loadDictionary();
 	},
@@ -17,17 +17,17 @@ module.exports = {
 		});
 		console.log("dictionary loaded!");
 	},
-	checkWord: function(word){
-		"user strict";
-		console.log("checking dictionary for "+ word);
-		this.redisClient.exists(word.toUpperCase(),function(err,data){
+	checkWord: function(word, callback){
+		"use strict";
+		//console.log("**********"+word);
+		return this.redisClient.exists(word.toLowerCase(),function(err,data){
 			if(err){
 				throw err;
 			}else{
-				console.log(word+": "+data);
+				return callback(word,data);
 			}
 		});
-	}
+	},
 	addWordToDictionary: function(word){
 		"use strict";
 		this.redisClient.set(word,"");

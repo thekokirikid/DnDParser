@@ -1,4 +1,4 @@
-var fs = require('fs'), walk = require('walk'), xml2js = require('xml2js');
+var fs = require('fs'), walk = require('walk'), xml2js = require('xml2js'), dictionary = require("./dictionaryServer.js");
 
 var file_path = './xml_files';
 var xml_files = [];
@@ -24,9 +24,10 @@ walker.on('end', function() {
 				if (e1) throw e1
 			    parser.parseString(data, function (e2, result) {
 			    	if (e2) {
-			    		console.log(file_name + "\n" + e2); 
+			    		console.log(file_name + "\n" + e2);
 			    	} else {
 			    		var json_result = JSON.stringify(result);
+			    		iterate(result);
 			        	console.log(file_name + ' Complete.');
 			    	}
 			    });
@@ -35,3 +36,26 @@ walker.on('end', function() {
     }
 
 });
+
+function iterate(obj){
+	if(typeof obj==="string"){
+		var words = obj.replace(/[.,\/#!$%\^&\*;:{}=_`~()]/g,"").replace(/\s{2,}/g," ").split(" ");
+		for(i in words){
+			dictionary.checkWord(words[i],wordSearched);
+		}
+	}
+	else{
+		for(i in obj){
+			if(obj.hasOwnProperty(i)){
+				iterate(obj[i]);
+			}
+		}
+	}
+}
+
+function wordSearched(word, data){
+	if(word!==""&&word.length>1&&isNaN(word)&&data===0){
+		console.log("not found: "+word);
+	}
+}
+
