@@ -6,10 +6,6 @@ This is an application to verify XML files as well as run a spelling check on th
 After cloning the repository and installing NodeJS, run:
 
   src/redis-server
-  
-This will start up the redis server. To test loading the dictionary into redis, run the command:
-
-  node dictionaryServer.js
 
 After starting the redis server you must create a directory called 'xml_files' and place all the Application XML files in this directory.
 
@@ -19,6 +15,6 @@ To run the parser run:
 
   node parser.js
   
-If there is an error with the syntax of an xml file an error will be displayed depicting the file and the error in that file.
+If there is an error with the syntax of an xml file an error will be displayed depicting the file and the error in that file. The program will also output all of the words in the XML file that aren't in the wordlist. Because this parser is reading books with many fantasy terms in it, there are bound to be words in the XML files that are not in the word list, so the next step in this project is to add an option to add a new word to the wordlist.
   
   
